@@ -1,6 +1,6 @@
 #include <iostream>
 
-bool isPalindrome(const string &str)
+bool isPalindrome(const std::string &str)
 {
    if (str.empty())
       return false;
@@ -18,11 +18,11 @@ bool isPalindrome(const string &str)
  int main()
  {
     //  check for palindrome on sample string
-    string s = "Dad"
-    if(isPalindrome(s)
-       std::cout << given string is palindrome" <<std::endl;
+    std::string s = "Step on no pets";
+    if(isPalindrome(s))
+       std::cout << "given string is palindrome" <<std::endl;
     else
-       std::cout << given string is not palindrome" <<std::endl;
+       std::cout << "given string is not palindrome" <<std::endl;
        
     return 0 ;
  }
