@@ -9,7 +9,7 @@ bool isPalindrome(const string &str)
    
    while( i< j)
    {
-      if(str[i++] != str [j--])
+      if (std::toupper(str[i++]) != std::toupper(str[j--]))
         return false;
    }
    return true;
@@ -18,7 +18,7 @@ bool isPalindrome(const string &str)
  int main()
  {
     //  check for palindrome on sample string
-    string s = "DAD"
+    string s = "Dad"
     if(isPalindrome(s)
        std::cout << given string is palindrome" <<std::endl;
     else
